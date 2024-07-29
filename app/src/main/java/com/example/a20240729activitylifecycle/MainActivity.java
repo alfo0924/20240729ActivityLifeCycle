@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        log.d("觀察方法","OnCreate Running");
+        Log.d("觀察方法","OnCreate Running");
 
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
@@ -75,6 +75,13 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         Log.d("觀察方法","onDestroy : running");
     }
+
+    @Override
+    protected void onRestart(){
+        super.onRestart();
+        Log.d("觀察方法","onRestart : running");
+    }
+
 
 
 
