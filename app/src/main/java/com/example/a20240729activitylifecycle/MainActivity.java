@@ -3,6 +3,7 @@ package com.example.a20240729activitylifecycle;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import androidx.activity.EdgeToEdge;
@@ -41,5 +42,40 @@ public class MainActivity extends AppCompatActivity {
     {
         finish();
     }
+    @Override
+    protected void onStart(){
+        super.onStart();
+        Log.d("觀察方法","onStart : running");
+    }
+
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+        Log.d("觀察方法","onResume :  running");
+    }
+
+    @Override
+    protected void onPause(){
+        super.onPause();
+        Log.d("觀察方法","onPause : running");
+    }
+
+
+
+    @Override
+    protected void onStop(){
+        super.onStop();
+        Log.d("觀察方法","onStop : running");
+    }
+
+
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+        Log.d("觀察方法","onDestroy : running");
+    }
+
+
 
 }
