@@ -16,6 +16,8 @@ import java.net.URI;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    //observe Function below
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
